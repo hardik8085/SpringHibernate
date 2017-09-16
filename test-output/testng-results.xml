@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="6" failed="0" total="23" passed="17">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1522" started-at="2017-09-16T20:52:33Z" finished-at="2017-09-16T20:52:34Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1522" started-at="2017-09-16T20:52:33Z" finished-at="2017-09-16T20:52:34Z">
+      <class name="com.hardik.springmvc.dao.EmployeeDaoImplTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="9" started-at="2017-09-16T16:52:33Z" finished-at="2017-09-16T16:52:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="FAIL" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2017-09-16T16:52:33Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2017-09-16T16:52:33Z">
+          <exception class="org.springframework.beans.factory.BeanCreationException">
+            <message>
+              <![CDATA[Error creating bean with name 'com.hardik.springmvc.dao.EmployeeDaoImplTest': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.hardik.springmvc.dao.EmployeeDao com.hardik.springmvc.dao.EmployeeDaoImplTest.employeeDao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.hardik.springmvc.dao.EmployeeDao] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.hardik.springmvc.dao.EmployeeDaoImplTest': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.hardik.springmvc.dao.EmployeeDao com.hardik.springmvc.dao.EmployeeDaoImplTest.employeeDao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.hardik.springmvc.dao.EmployeeDao] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:292)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:384)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:110)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:331)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextPrepareTestInstance(AbstractTestNGSpringContextTests.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:140)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.hardik.springmvc.dao.EmployeeDao com.hardik.springmvc.dao.EmployeeDaoImplTest.employeeDao; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.hardik.springmvc.dao.EmployeeDao] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	... 30 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.hardik.springmvc.dao.EmployeeDao] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1103)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:963)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:858)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.springframework.beans.factory.BeanCreationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="setUp" is-config="true" duration-ms="0" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="deleteEmployeeByInvalidSsn()[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="deleteEmployeeByInvalidSsn" duration-ms="1" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteEmployeeByInvalidSsn -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="2" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.hardik.springmvc.dao.EmployeeDaoImplTest.deleteEmployeeByInvalidSsn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="setUp" is-config="true" duration-ms="0" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="deleteEmployeeBySsn()[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="deleteEmployeeBySsn" duration-ms="2" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteEmployeeBySsn -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.hardik.springmvc.dao.EmployeeDaoImplTest.deleteEmployeeBySsn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="setUp" is-config="true" duration-ms="0" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="findAllEmployees()[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="findAllEmployees" duration-ms="6" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAllEmployees -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.hardik.springmvc.dao.EmployeeDaoImplTest.findAllEmployees()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="setUp" is-config="true" duration-ms="0" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="findById()[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="findById" duration-ms="1" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.hardik.springmvc.dao.EmployeeDaoImplTest.findById()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="setUp" is-config="true" duration-ms="0" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="findEmployeeBySsn()[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="findEmployeeBySsn" duration-ms="1" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findEmployeeBySsn -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="6" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.hardik.springmvc.dao.EmployeeDaoImplTest.findEmployeeBySsn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="setUp" is-config="true" duration-ms="0" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="saveEmployee()[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="saveEmployee" duration-ms="1" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveEmployee -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.hardik.springmvc.dao.EmployeeDaoImplTest.saveEmployee()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.hardik.springmvc.dao.EmployeeDaoImplTest@57f23557]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.hardik.springmvc.dao.EmployeeDaoImplTest -->
+      <class name="com.hardik.springmvc.controller.AppControllerTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.hardik.springmvc.controller.AppControllerTest@61ca2dfa]" name="setUp" is-config="true" duration-ms="241" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleteEmployee()[pri:0, instance:com.hardik.springmvc.controller.AppControllerTest@61ca2dfa]" name="deleteEmployee" duration-ms="9" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteEmployee -->
+        <test-method status="PASS" signature="editEmployee()[pri:0, instance:com.hardik.springmvc.controller.AppControllerTest@61ca2dfa]" name="editEmployee" duration-ms="19" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editEmployee -->
+        <test-method status="PASS" signature="listEmployees()[pri:0, instance:com.hardik.springmvc.controller.AppControllerTest@61ca2dfa]" name="listEmployees" duration-ms="12" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listEmployees -->
+        <test-method status="PASS" signature="newEmployee()[pri:0, instance:com.hardik.springmvc.controller.AppControllerTest@61ca2dfa]" name="newEmployee" duration-ms="2" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newEmployee -->
+        <test-method status="PASS" signature="saveEmployeeWithSuccess()[pri:0, instance:com.hardik.springmvc.controller.AppControllerTest@61ca2dfa]" name="saveEmployeeWithSuccess" duration-ms="2" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveEmployeeWithSuccess -->
+        <test-method status="PASS" signature="saveEmployeeWithValidationError()[pri:0, instance:com.hardik.springmvc.controller.AppControllerTest@61ca2dfa]" name="saveEmployeeWithValidationError" duration-ms="2" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveEmployeeWithValidationError -->
+        <test-method status="PASS" signature="saveEmployeeWithValidationErrorNonUniqueSSN()[pri:0, instance:com.hardik.springmvc.controller.AppControllerTest@61ca2dfa]" name="saveEmployeeWithValidationErrorNonUniqueSSN" duration-ms="2" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveEmployeeWithValidationErrorNonUniqueSSN -->
+        <test-method status="PASS" signature="updateEmployeeWithSuccess()[pri:0, instance:com.hardik.springmvc.controller.AppControllerTest@61ca2dfa]" name="updateEmployeeWithSuccess" duration-ms="3" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateEmployeeWithSuccess -->
+        <test-method status="PASS" signature="updateEmployeeWithValidationError()[pri:0, instance:com.hardik.springmvc.controller.AppControllerTest@61ca2dfa]" name="updateEmployeeWithValidationError" duration-ms="3" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateEmployeeWithValidationError -->
+        <test-method status="PASS" signature="updateEmployeeWithValidationErrorNonUniqueSSN()[pri:0, instance:com.hardik.springmvc.controller.AppControllerTest@61ca2dfa]" name="updateEmployeeWithValidationErrorNonUniqueSSN" duration-ms="1" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateEmployeeWithValidationErrorNonUniqueSSN -->
+      </class> <!-- com.hardik.springmvc.controller.AppControllerTest -->
+      <class name="com.hardik.springmvc.service.EmployeeServiceImplTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.hardik.springmvc.service.EmployeeServiceImplTest@44f75083]" name="setUp" is-config="true" duration-ms="4" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleteEmployeeBySsn()[pri:0, instance:com.hardik.springmvc.service.EmployeeServiceImplTest@44f75083]" name="deleteEmployeeBySsn" duration-ms="1" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteEmployeeBySsn -->
+        <test-method status="PASS" signature="findAllEmployees()[pri:0, instance:com.hardik.springmvc.service.EmployeeServiceImplTest@44f75083]" name="findAllEmployees" duration-ms="3" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAllEmployees -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:com.hardik.springmvc.service.EmployeeServiceImplTest@44f75083]" name="findById" duration-ms="1" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="findEmployeeBySsn()[pri:0, instance:com.hardik.springmvc.service.EmployeeServiceImplTest@44f75083]" name="findEmployeeBySsn" duration-ms="1" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findEmployeeBySsn -->
+        <test-method status="PASS" signature="isEmployeeSsnUnique()[pri:0, instance:com.hardik.springmvc.service.EmployeeServiceImplTest@44f75083]" name="isEmployeeSsnUnique" duration-ms="23" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isEmployeeSsnUnique -->
+        <test-method status="PASS" signature="saveEmployee()[pri:0, instance:com.hardik.springmvc.service.EmployeeServiceImplTest@44f75083]" name="saveEmployee" duration-ms="2" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveEmployee -->
+        <test-method status="PASS" signature="updateEmployee()[pri:0, instance:com.hardik.springmvc.service.EmployeeServiceImplTest@44f75083]" name="updateEmployee" duration-ms="2" started-at="2017-09-16T16:52:34Z" finished-at="2017-09-16T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateEmployee -->
+      </class> <!-- com.hardik.springmvc.service.EmployeeServiceImplTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
